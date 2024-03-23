@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ERP Portal - BIT LALPUR</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <img id="bg" src="bitl.jpg" alt="bit_lalpur" style="width: 100%; position: absolute; z-index: -1; opacity: 0.7;">
+    <div class="container">
+        <h1>Welcome to BIT Lalpur's Anonymous Feedback</h1>
+        <p>Enter your feedback for any authorities or services provided by the university.</p>
+        <p>The feedback will be successfully delivered to the concerned authority(class mentor)</p>
+        <form action="action.php" method="post">
+            <!--<label for="name">Name:</label>-->
+            <input type="text"  id="name" name="name" placeholder="Enter Full Name" required><br><br>
+            <!--<label for="roll">Roll Number:</label>-->
+            <input type="text"  id="roll" name="roll" placeholder="Enter Roll Number Eg-BCA/00000/00" required><br><br>
+            <!--<label for="stream">Stream:</label>-->
+            <input type="text"  id="stream" name="stream" placeholder="Enter Stream - BCA/BBA/MCA/MBA" required><br><br>
+            <!--<label for="email">Institute Email:</label>-->
+            <input type="email"  id="email" name="email" placeholder="Enter Institute MailId Eg-xxx@bitmesra.ac.in" required><br><br>
+            <!--<label for="phone">Phone No.:</label>-->
+            <input type="phone"  id="phone" name="phone" placeholder="Enter Phone Number" required><br><br>
+            <textarea name="feed" id="feed" cols="90" rows="7" placeholder="Enter your feedback." required></textarea>
+            <button class="btn">Submit</button><br><br>
+        </form>
+    </div>
+</body>
+</html>
